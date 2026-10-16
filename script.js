@@ -15,6 +15,7 @@ let transf = "";
 let limite = 0;
 var gemasRojas = 0;
 var gemasN = 0;
+var gemasP = 0;
 
 const texto = "HOLA KIRBY";
 document.write('<h1 style="color: #df0068">' + texto + '</h1>');
@@ -65,19 +66,24 @@ btn5.addEventListener("click", () => contadorGemas("resto"));
 
 function contadorGemas(accion) {
     gemasN = 0;
-    gemasRojas = 0;
+    gemasP = 0;
     if (accion == "sumo") {
         for (var conteo = 1; conteo <= 5; conteo++) {
             console.log("+1 Gema Roja")
+            gemasP++;
             gemasRojas++;
-
         }
+        console.log("Gemas Obtenidas: " + gemasP);
+        console.log("Gemas: " + gemasRojas);
     }
     else if (accion == "resto") {
         for (var conteo = 1; conteo <= 5; conteo++) {
             console.log("-1 Gema Roja")
+            gemasN++;
             gemasRojas--;
         }
+        console.log("Gemas perdidas: " + gemasN);
+        console.log("Gemas: " + gemasRojas);
     }
     c1.style.display = "flex";
     c2.style.display = "flex";
