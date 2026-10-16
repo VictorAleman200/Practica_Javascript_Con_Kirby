@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.cont {
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.boton {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.116);
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont:has(.boton:hover) {
+    background-color: #df0068;
+}
+
+#cuenca {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.116);
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enemy {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.116);
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c4, .c5{
+    display: none;
+}
